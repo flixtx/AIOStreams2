@@ -173,7 +173,7 @@ AIOStreams is a passion project developed and maintained for free. If you find i
   - **[GitHub Sponsors](https://github.com/sponsors/Viren070)**
 
 ---
-
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
 <h2 align="center"> ⭐ Star History</h2>
 
 <p align="center">
