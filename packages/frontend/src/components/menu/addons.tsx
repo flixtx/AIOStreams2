@@ -631,16 +631,16 @@ function Content() {
             )}
           </PageWrapper>
         )}
-        {/* Add/Edit Addon Modal (ensure both tabs can use it)*/}
-        <AddonModal
-          open={modalOpen}
-          onOpenChange={setModalOpen}
-          mode={modalMode}
-          presetMetadata={modalPreset}
-          initialValues={modalInitialValues as any}
-          onSubmit={handleModalSubmit}
-        />
       </AnimatePresence>
+      {/* Add/Edit Addon Modal (ensure both tabs can use it)*/}
+      <AddonModal
+        open={modalOpen}
+        onOpenChange={setModalOpen}
+        mode={modalMode}
+        presetMetadata={modalPreset}
+        initialValues={modalInitialValues as any}
+        onSubmit={handleModalSubmit}
+      />
     </>
   );
 }
@@ -854,9 +854,9 @@ function SortableAddonItem({
 
         <div className="flex items-center gap-1 sm:gap-2">
           <Switch
-            value={!!preset.enabled}
+            value={preset.enabled ?? false}
             onValueChange={onToggleEnabled}
-            size="sm"
+            className="h-5 w-9 md:h-6 md:w-11"
           />
           {isConfigurable && (
             <IconButton
